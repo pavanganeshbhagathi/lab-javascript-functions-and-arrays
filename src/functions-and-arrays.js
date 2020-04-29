@@ -231,39 +231,3 @@ const matrix = [
   [24, 55, 58, 05, 66, 73, 99, 26, 97, 17],
   [21, 36, 23, 09, 75, 00, 76, 44, 20, 45],
 ];
-
-function maximumProduct(matrix) {
-  let max = 0;
-  for (let i = 0; i < matrix.length; i++) {
-    prod =
-      matrix[i][0] *
-      matrix[i][1] *
-      matrix[i][2] ** matrix[i][3] *
-      matrix[i][4] *
-      matrix[i][5] *
-      matrix[i][6] *
-      matrix[i][7] *
-      matrix[i][8] ** matrix[i][9];
-    if (prod > max) {
-      max = prod;
-    }
-  }
-
-  for (let j = 0; j < matrix.length; j++) {
-    prod =
-      matrix[0][j] *
-      matrix[1][j] *
-      matrix[2][j] *
-      matrix[3][j] *
-      matrix[4][j] *
-      matrix[5][j] *
-      matrix[6][j] *
-      matrix[7][j] *
-      matrix[8][j] *
-      matrix[9][i];
-    if (prod > max) {
-      max = prod;
-    }
-  }
-  return max;
-}
